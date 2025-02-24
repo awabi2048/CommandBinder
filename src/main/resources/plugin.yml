@@ -1,0 +1,5 @@
+name: CommandBinding
+version: '0.1-ALPHA'
+main: awabi2048.command_binding.Main
+api-version: '1.21'
+authors: [ awabi2048 ]

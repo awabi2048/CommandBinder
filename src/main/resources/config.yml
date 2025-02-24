@@ -1,0 +1,6 @@
+shift_f:
+  player_command:
+    - "say eat negi"
+  server_command:
+    - "say not eat negi 2"
+
