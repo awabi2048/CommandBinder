@@ -1,4 +1,4 @@
-package awabi2048.command_binding
+package awabi2048.command_binder
 
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
@@ -10,8 +10,8 @@ object EventListener: Listener {
         if (event.player.isSneaking) {
             val executor = BinderExecutor(event.player, Binder.SHIFT_F)
             executor.execute()
+
+            event.isCancelled = true
         }
     }
-
-
 }

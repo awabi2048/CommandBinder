@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>awabi2048</groupId>
-    <artifactId>CommandBinding</artifactId>
-    <version>0.1-ALPHA</version>
+    <artifactId>CommandBinder</artifactId>
+    <version>1.0-BETA</version>
     <packaging>jar</packaging>
 
-    <name>CommandBinding</name>
+    <name>CommandBinder</name>
 
     <properties>
         <java.version>21</java.version>

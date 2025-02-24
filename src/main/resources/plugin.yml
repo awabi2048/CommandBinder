@@ -1,5 +1,9 @@
-name: CommandBinding
+name: CommandBinder
 version: '0.1-ALPHA'
-main: awabi2048.command_binding.Main
+main: awabi2048.command_binder.Main
 api-version: '1.21'
 authors: [ awabi2048 ]
+
+commands:
+  commandbinder_reload:
+    description: "reloads config.yml"
