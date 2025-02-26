@@ -7,7 +7,7 @@ import org.bukkit.event.player.PlayerSwapHandItemsEvent
 object EventListener: Listener {
     @EventHandler
     fun onShiftF(event: PlayerSwapHandItemsEvent) {
-        if (event.player.isSneaking) {
+        if (event.player.isSneaking && Main.detectionCooldown[event.player]?.contains(Binder.SHIFT_F) != true) {
             val executor = BinderExecutor(event.player, Binder.SHIFT_F)
             executor.execute()
 

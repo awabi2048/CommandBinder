@@ -1,9 +1,6 @@
-# %player_name% プレイヤーの名前
-# %player_uuid% プレイヤーのUUID
-
 shift_f:
   player_commands:
     - "say executed as player (negi)"
   server_commands:
     - "say executed as console (negi)"
-
+  cooldown: 10

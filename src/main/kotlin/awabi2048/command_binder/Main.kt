@@ -1,6 +1,7 @@
 package awabi2048.command_binder
 
 import org.bukkit.configuration.file.FileConfiguration
+import org.bukkit.entity.Player
 import org.bukkit.plugin.java.JavaPlugin
 
 class Main : JavaPlugin() {
@@ -8,6 +9,8 @@ class Main : JavaPlugin() {
     companion object {
         lateinit var instance: JavaPlugin
         lateinit var configFile: FileConfiguration
+
+        var detectionCooldown: MutableMap<Player, MutableList<Binder>> = mutableMapOf()
     }
 
     override fun onEnable() {
